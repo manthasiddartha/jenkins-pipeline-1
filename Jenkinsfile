@@ -1,6 +1,6 @@
 echo "Welcome to Pipeline"
 pipeline {
-    agent { dockerfile true }
+    agent any
 	environment{ 
 		dockerHome = tool 'myDocker'
 		mavenHome = tool 'myMaven'
@@ -25,10 +25,15 @@ pipeline {
 			   echo "Completed creating jar file"
             }
         }
-        stage('Deploy') {
-            steps {
-               echo "Deploy"
-            }
-        }
+		stage("Docker build") {
+     		steps {
+         		 sh "docker build -t currenyexchange+$env.BUILD_TAG ."
+    		 }
+			}
+        stage("Deploy to staging") {
+     		steps {
+          sh "docker run -d --rm -p 8004:8004 --name currenyexchange+$env.BUILD_TAG currenyexchange+$BUILD_TAG"
+     }
+		}
     }
 }
