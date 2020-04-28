@@ -1,5 +1,8 @@
 echo "Welcome to Pipeline"
 pipeline {
+	sudo su 
+	sudo yum install docker-engine -y
+	sudo service docker start
     agent { dockerfile true }
 	environment{ 
 		dockerHome = tool 'myDocker'
