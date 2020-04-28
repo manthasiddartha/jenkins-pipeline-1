@@ -27,12 +27,12 @@ pipeline {
         }
 		stage("Docker build") {
      		steps {
-         		 sh "docker build -t currenyexchange+$env.BUILD_TAG ."
+         		 sh "docker build -t currenyexchange ."
     		 }
 			}
         stage("Deploy to staging") {
      		steps {
-          sh "docker run -d --rm -p 8004:8004 --name currenyexchange+$env.BUILD_TAG currenyexchange+$BUILD_TAG"
+          sh "docker run -d --rm -p 8004:8004 --name currenyexchange_1 currenyexchange"
      }
 		}
     }
