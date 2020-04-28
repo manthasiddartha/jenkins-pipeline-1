@@ -21,7 +21,7 @@ pipeline {
 		stage('Package') {
             steps { 
                echo "Started creating jar file"
-			   sh "mvn package -DskipTests"
+			   sh "mvn clean install -DskipTests"
 			   echo "Completed creating jar file"
             }
         }
