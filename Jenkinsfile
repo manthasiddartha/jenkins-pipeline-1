@@ -1,7 +1,7 @@
 echo "Welcome to Pipeline"
 pipeline {
-    agent any
-	environment{
+    agent { dockerfile true }
+	environment{ 
 		dockerHome = tool 'myDocker'
 		mavenHome = tool 'myMaven'
 		PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
@@ -16,6 +16,13 @@ pipeline {
         stage('Test') {
             steps { 
                 echo "Test"
+            }
+        }
+		stage('Package') {
+            steps { 
+               echo "Started creating jar file"
+			   sh "mvn package -DskipTests"
+			   echo "Completed creating jar file"
             }
         }
         stage('Deploy') {
