@@ -32,7 +32,7 @@ pipeline {
 			}
         stage("Deploy to staging") {
      		steps {
-          sh "docker run -d --rm -p 9000:9000 --name currenyexchange_4 currenyexchange"
+          sh "docker run -d --rm -p 9001:9001 --name currenyexchange_5 currenyexchange"
      }
 		}
     }
