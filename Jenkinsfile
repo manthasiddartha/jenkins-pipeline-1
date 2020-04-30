@@ -18,6 +18,13 @@ pipeline {
                 echo "Test"
             }
         }
+		stage('Package') {
+            steps { 
+               echo "Started creating jar file"
+			   sh "mvn clean install -DskipTests"
+			   echo "Completed creating jar file"
+            }
+        }
 		stage("Docker build") {
      		steps {
          		 sh "docker build -t currenyexchange ."
