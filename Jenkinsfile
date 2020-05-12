@@ -27,6 +27,7 @@ pipeline {
         }
 		stage("Docker build") {
      		steps {
+			sh "USER 1000"
          		 sh "docker build -t currenyexchange ."
     		 }
 			}
