@@ -2,7 +2,7 @@ echo "Welcome to Pipeline"
 pipeline {
     agent any
 	environment{ 
-		dockerHome = tool 'myDocker'
+		mavenHome = tool 'myMaven'
 		PATH = "$mavenHome/bin:$PATH"
 	}
     stages { 
