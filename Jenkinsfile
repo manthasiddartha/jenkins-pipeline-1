@@ -22,7 +22,6 @@ pipeline {
         }
 		stage("Docker build") {
      		steps {
-			sh "sudo su -"
          		 sh "docker build -t currenyexchange ."
     		 }
 			}
