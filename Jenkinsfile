@@ -27,7 +27,7 @@ pipeline {
         }
 	    stage("Docker build") {
 		     agent{
- 			label 'java'
+ 			label 'java-docker-slave'
 		     }
      		steps {
          		 sh "docker build -t currenyexchange ."
