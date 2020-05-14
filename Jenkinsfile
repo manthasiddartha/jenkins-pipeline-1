@@ -37,7 +37,7 @@ pipeline {
  			label 'gcloud'
 		    }
 		    steps{
-		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-cea46baeb61d.json'
+		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-493a984c2e58.json'
 		     sh 'gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project symbolic-card-270810'
                      sh 'kubectl get pods'
 		    }
