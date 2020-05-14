@@ -1,7 +1,7 @@
 echo "Welcome to Pipeline"
 pipeline {
  agent{
- 	label 'java-docker-slave'
+ 	label 'java-jenkins-slave'
 	}
 	environment{ 
 		mavenHome = tool 'myMaven'
