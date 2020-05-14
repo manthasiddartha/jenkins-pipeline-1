@@ -33,7 +33,7 @@ pipeline {
 		
         stage("Deploy to staging") {
      		steps {
-          sh "docker run -d --rm -p 8004:8004 -v /var/run/docker.sock:/var/run/docker.sock --privileged --name currenyexchange_1 currenyexchange"
+          sh "docker run -d --rm -p 9001:9001 -v /var/run/docker.sock:/var/run/docker.sock --privileged --name currenyexchange_1 currenyexchange"
      }
 		}
     }
