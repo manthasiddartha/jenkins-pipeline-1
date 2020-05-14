@@ -1,6 +1,8 @@
 echo "Welcome to Pipeline"
 pipeline {
-    agent any
+ agent{
+ 	label 'java-docker-slave'
+	}
 	environment{ 
 		mavenHome = tool 'myMaven'
 		PATH = "$mavenHome/bin:$PATH"
@@ -26,9 +28,7 @@ pipeline {
             }
         }
 	    stage("Docker build") {
-		     agent{
- 			label 'java-docker-slave'
-		     }
+		    
      		steps {
          		 sh "docker build -t currenyexchange ."
 			sh "helm version"
@@ -37,9 +37,6 @@ pipeline {
 		
 		
 	    stage("Connect to Gcloud"){
-		    agent{
- 			label 'gcloud'
-		    }
 		    steps{
 		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-493a984c2e58.json'
 		     sh 'gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project symbolic-card-270810'
