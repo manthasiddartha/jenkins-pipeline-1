@@ -26,13 +26,13 @@ pipeline {
             }
         }
 	    stage("Docker build") {
-     		steps {
-         		 sh "docker build -t currenyexchange ."
-			 agent{
+		     agent{
  			label 'java'
 		     }
+     		steps {
+         		 sh "docker build -t currenyexchange ."
 			sh "helm version"
-    		 }
+    		   }
 			}
 		
 		
