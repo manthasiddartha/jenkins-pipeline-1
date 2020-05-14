@@ -45,7 +45,7 @@ pipeline {
 	    stage('Connect to Helm'){
 		    steps{
 		      sh 'helm repo add bitnami https://charts.bitnami.com/bitnami'
-	              sh 'helm install bitnami/nginx'
+	              sh 'helm install bitnami/nginx --generate-name'
 		      sh 'helm repo list'
 		    }
 	    }
