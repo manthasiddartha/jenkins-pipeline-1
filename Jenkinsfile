@@ -28,6 +28,9 @@ pipeline {
 	    stage("Docker build") {
      		steps {
          		 sh "docker build -t currenyexchange ."
+			 agent{
+ 			label 'java'
+		     }
 			sh "helm version"
     		 }
 			}
