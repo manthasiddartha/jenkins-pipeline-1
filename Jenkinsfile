@@ -40,7 +40,13 @@ pipeline {
 		    steps{
 		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-493a984c2e58.json'
 		     sh 'gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project symbolic-card-270810'
-                     sh 'kubectl create -f deployment-info.yaml'
+		    }
+	    }
+	    stage('Connect to Helm'){
+		    steps{
+		      sh 'helm repo add bitnami https://charts.bitnami.com/bitnami'
+	              sh 'helm install bitnami/nginx'
+		      sh 'helm repo list'
 		    }
 	    }
     }
