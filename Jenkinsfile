@@ -34,7 +34,7 @@ pipeline {
 		
 	    stage("Connect to Gcloud"){
 		    agent{
-		    label: 'gcloud'
+ 			label 'gcloud'
 		    }
 		    steps{
 		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-cea46baeb61d.json'
