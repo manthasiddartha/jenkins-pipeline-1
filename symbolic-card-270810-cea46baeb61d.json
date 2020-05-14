@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "symbolic-card-270810",
+  "private_key_id": "cea46baeb61df6ec83063b15d14512071760a124",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBZD118ERpN2ep\ndVPSvKBCIDytSiWIfGOnlOlfPu1XntYIQWhC7sVMBIcMJAbzK+hBC51nmxW+6SZs\n8owbxf0V39bU92ULiuABetHyW5trb4D2EzF8/+G9YEknzdCac4PzXLi8TJma5H47\nzRhV/qeFi9f6/gafax2V9wI9ig9P1GHUfyPszohPrrm5V36PrPv8Wne+V8KAnexB\nKnaEOhSTsz/pxJMF1m5CLB79Br4bqGbFBIRbRSbO9V+Xvb23RO7/OlhYqSnaFcLs\ne6rMi5oQchCKObMGKigP5YN44zxjq6YLCfBBAaDpqgQxH3TgGNZEeznidTfumwey\nngq9las1AgMBAAECggEALOE/ZiRZK/XAp9Hjnw9JPa9PhYOkjDUZx2VGd2UaHXBu\nCUJsmMPio46VbJrbxgkVgCra35VdCY3/7d6n5zYeUro8l/XFzFTxQUaofE8IFXmt\n+u1fWbvkPlefAo6/72gJYivNb11zdD+8j9I76JENfW+DsurKzKpGFmxZZ8CnZwXi\nFV3LlL1amMzGxoQal6A0AF9XnhEJ5ltykNw+2uzpdjYCdjc/lBFh+Slv43OpqWp6\nOBaN19p8SrJaoNAMJOssKYjIclma3U+XoJ0RMFkxv2nsIj/+l2BkH7WtGEBwfoOp\n1n+ZHXwCTe62t05S55jWk1aWGH9UqB7IJFa5wWRqTQKBgQDvZRha1BlOp9Ye2wGS\n1rkR2GS/iiFf3aVRD4bMPSXAsc7GNlpGn3n2KH2VAEROr1e0an7gcHs6+XHXxRos\n5wq2JbxI50z9bNRexZh+cnC2bIZSfwu+RSiN8Vh7mFDNTiL3myDWPMV3MCBt2in9\n+dqme9QqJF2e1SGMVnvB4ojw/wKBgQDOzkT8y7xSnXiin4l1f4IVyxjhzl3w/wUu\nXnMb9YPImCjnTtTMgQHTzznxIvWNc0gIxvEQbVVSkwhl4uvLCUzFDKVuVxWPIcFv\nMLj2KY4Aql+FfBqrSs+vsko6MJDwrO+0eidrs5cTsUXGyEFbZaID4fLVHWN5iBrU\nkXXaxYBvywKBgQDpJRntC3eCJO7hqgUETt56xLaJ3CrYxHIGWgq7yimEWya336NX\n+GS9GX4EqPfdceMGsFjUmHdLXjhDHZB6fqDt+B5BGhLfFShXDDWRoD6pS1Qd7+Et\n8wimBJBZ/mNjL1/aqVf3jcP6agKLOdd/o+AQF7TvPe93irZbiLaKguc/XQKBgQCN\n7W/ZEjWHeTzeVqDuu3haXo0QAyHjkBFNNlLHYGJ12z9PJ4HRa8QGShSY0gY1cmWA\naI/uVyqURgYgbnCmYhaGsVwjcq6AEYmANq7pebFT8ZkmsfpXjjskeDaK4uPF2NmV\nQbQmLRVE1YdumeaIxCJBieKuscGgGXFYaw+3+Y1gqwKBgQDKP4v+yOw0xD07GBKr\nc4Z7a/QZeC3cU75qbBQWTPkIVmHOYjJUGvfuerYp0RgpeBTc/9JmuOyCtXuTmf2F\nEPFz8dvUUo4ouIpZSCAJJOTy6qSLuj+o/9Ti4OTzfVYy1OPSmyPWk/elr2oV/SJI\nVHuIHZpvswKv0wiBZ6k8unbTBA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "k8s-service-account@symbolic-card-270810.iam.gserviceaccount.com",
+  "client_id": "111436282372178691055",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/k8s-service-account%40symbolic-card-270810.iam.gserviceaccount.com"
+}
