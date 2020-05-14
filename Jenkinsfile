@@ -10,7 +10,7 @@ pipeline {
             steps { 
                echo "Build"
 			   echo "PATH -$PATH"
-		           gcloud version
+		          sh "gcloud version"
             }
         }
         stage('Test') {
