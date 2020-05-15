@@ -38,7 +38,8 @@ pipeline {
 		
 	    stage("Connect to Gcloud"){
 		    steps{
-		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-493a984c2e58.json'
+		     git credentialsId: 'secret', url: 'https://github.com/manthasiddartha/secrets.git'
+		     sh 'gcloud auth activate-service-account --key-file=symbolic-card-270810-ba087a1aa175.json'
 		     sh 'gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project symbolic-card-270810'
 		    }
 	    }
